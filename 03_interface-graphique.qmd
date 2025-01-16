@@ -18,11 +18,11 @@ Une page peut être découpée en « lignes » :
 
 `ui <- fluidPage(`
 
-`fluidRow(),`
+`              fluidRow(),`
 
-`fluidRow()`
+`              fluidRow()`
 
-`)`
+`              )`
 
 ## Partie interface graphique {.backgroundTitre}
 

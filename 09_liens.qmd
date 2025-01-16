@@ -1,0 +1,11 @@
+# Liens utiles {.backgroundTitre}
+
+## Liens utiles {.backgroundTitre}
+
+-   L'aide mémoire:
+
+<https://thinkr.fr/pdf/shiny-french-cheatsheet.pdf>
+
+-   Le tutoriel (en anglais) disponible sur RStudio :
+
+<https://shiny.rstudio.com/tutorial/written-tutorial/lesson1/>

@@ -77,3 +77,11 @@ RStudio Workbench.
 {{< include 04_ihm-pour-ihm.qmd >}}
 
 {{< include 05_partie-serveur.qmd >}}
+
+{{< include 06_exemple.qmd >}}
+
+{{< include 07_reactivite.qmd >}}
+
+{{< include 08_programme.qmd >}}
+
+{{< include 09_liens.qmd >}}

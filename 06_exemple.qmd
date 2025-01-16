@@ -1,0 +1,43 @@
+# Exemples {.backgroundTitre}
+
+## Exemple : pas à pas {.backgroundTitre}
+
+![](img/clipboard-exemple1.png){fig-align="center"}
+
+## Exemple : pas à pas {.backgroundTitre}
+
+![](img/clipboard-exemple2.png){fig-align="center"}
+
+## Exemple : pas à pas {.backgroundTitre}
+
+![](img/clipboard-exemple3.png){fig-align="center"}
+
+## Exemple : pas à pas {.backgroundTitre}
+
+![](img/clipboard-exemple4.png)
+
+## Exemple : pas à pas {.backgroundTitre}
+
+![](img/clipboard-exemple5.png){fig-align="center"}
+
+## Exemple : pas à pas {.backgroundTitre}
+
+![](img/clipboard-exemple6.png){fig-align="center"}
+
+## Exemple : pas à pas {.backgroundTitre}
+
+L'objet **input\$num** sera automatiquement modifié :
+
+![](img/clipboard-exemple7.png){fig-align="center"}
+
+## Exemple : pas à pas {.backgroundTitre}
+
+![](img/clipboard-exemple8.png){fig-align="center"}
+
+## Exemple : pas à pas {.backgroundTitre}
+
+![](img/clipboard-exemple9.png){fig-align="center"}
+
+## Exemple : pas à pas {.backgroundTitre}
+
+![](img/clipboard-exemple10.png){fig-align="center"}

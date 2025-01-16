@@ -1,0 +1,45 @@
+# Réactivité {.backgroundTitre}
+
+## Réactivité {.backgroundTitre}
+
+Avec Shiny, on peut déclencher des traitements en fonction des actions de l'utilisateur.
+
+*« La réactivité d'une application, c'est sa capacité à mettre à jour ses éléments suite à l'action d'un utilisateur. »*
+
+On utilise des *« observers »* :
+
+-   **observe** → déclenche un traitement quelle que soit l'action
+
+-   **observeEvent** → déclenche un traitement quand l'utilisateur modifie un input précis
+
+## Réactivité {.backgroundTitre}
+
+-   Partie UI :
+
+`selectInput(inputId="ma_liste",`
+
+`label="Choisissez un pays",`
+
+`choices=c("Cambodge", "Ecosse", "Corée du Sud", "Islande")`
+
+`)`
+
+## Réactivité {.backgroundTitre}
+
+-   Partie Server :
+
+`observeEvent(input$ma_liste,{`
+
+`pays <- input$ma_liste`
+
+`if pays %in% c("Ecosse", "Islande"){`
+
+`continent <- "Europe"`
+
+`} else{`
+
+`continent <- "Asie"`
+
+`}`
+
+`}`
