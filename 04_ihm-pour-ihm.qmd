@@ -1,0 +1,7 @@
+# Interface graphique pour interface graphique {.backgroundTitre}
+
+## Interface graphique pour interface graphique {.backgroundTitre}
+
+-   Le package **{shinyuieditor}** permet de construire l’UI sans avoir à coder <https://rstudio.github.io/shinyuieditor/> (version préliminaire)
+
+-   Voir aussi le package **{flexdashboard}** pour construire des tableaux de bord avec du Rmarkdown <https://rstudio.github.io/flexdashboard/articles/shiny.html>

@@ -1,0 +1,100 @@
+---
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+# Partie serveur {.backgroundTitre}
+
+## Partie serveur {.backgroundTitre}
+
+On crée une fonction **server**, qui a au moins 2 paramètres :
+
+`server <- function(input, output) { ... }`
+
+Dans le corps de la fonction, on peut placer du code R traditionnel.
+
+Le fichier **server.R** contient les instructions nécessaires pour
+construire l'application et afficher les résultats dans l'interface.
+
+Plus précisément, il contient le code R à exécuter pour effectuer tous
+les traitements nécessaires à l'application :
+
+-   Chargement de données ;
+
+-   Calculs ; Sélection, extraction, … ;
+
+-   Traçage de graphique, affichage de tableau ;
+
+## Partie serveur {.backgroundTitre}
+
+Il y a 2 particularités principales liée à Shiny dans le code du
+serveur :
+
+-   Les références aux inputs/outputs : récupérer une valeur saisie,
+    afficher tel tableau à l'écran, ...
+
+-   Les éléments dits « réactifs » : on peut déclencher un traitement
+    particulier sur une action de l'utilisateur
+
+## Partie serveur {.backgroundTitre}
+
+Pour récupérer une valeur saisie par l'utilisateur, par exemple un champ
+de texte, on utilise le paramètre input, avec l'identifiant du champ de
+saisie **(inputId)**
+
+-   [partie ui]{.underline} :
+    `textInput(inputId="champ_saisie", label= "Saisir :")`
+
+-   [partie server]{.underline} : `ma_chaine <- input$champ_saisie`
+
+## Partie serveur {.backgroundTitre}
+
+Pour placer un tableau ou un graphique dans l'interface, on affecte à
+l'output la table concernée, en lui appliquant une fonction appelée
+« render »
+
+-   [partie ui]{.underline} : `tableOutput(outputId="resultat")`
+
+-   [partie server]{.underline} :
+    `output$resultat <- renderTable({ data })`
+
+Il existe des fonction **render** pour chaque type d'output
+(`renderTable, renderPlot, renderText, renderImage, …`).
+
+Dans le paramètre de la fonction, dans les accolades, on peut mettre
+simplement un objet R, ou un bloc de code :
+`renderTable({ head(data, n=10 })`
+
+## Partie serveur {.backgroundTitre}
+
+De la même façon que nous insérons des données dans l'application via
+les *widget*, il faut s'occuper d'afficher à l'écran les résultats des
+traitements.
+
+On utilise pour cela les fonctions render\* :
+
+-   `renderPlot ;`
+
+-   `renderImage ;`
+
+-   `renderTable, ...`
+
+## Partie serveur {.backgroundTitre}
+
+![](img/clipboard-serveur1.png)
+
+## Partie serveur {.backgroundTitre}
+
+Les fonctions **render\*** coté server et *\*Output* coté ui vont de
+pair :
+
+| ui.R               | server.R    |
+|--------------------|-------------|
+| imageOutput        | renderImage |
+| plotOutput         | renderPlot  |
+| tableOutput        | renderTable |
+| DTOutput           | renderDT    |
+| textOutput         | renderText  |
+| uiOutput           | renderUI    |
+| verbatimTextOutput | renderPrint |

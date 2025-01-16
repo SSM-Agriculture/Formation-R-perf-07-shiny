@@ -1,0 +1,23 @@
+# Introduction {.backgroundTitre}
+
+## Introduction {.backgroundTitre}
+
+Pourquoi créer une interface graphique ?
+
+⇒ Cela permet de pouvoir lancer un programme, modifier des paramètres, visualiser des résultats, sans avoir à manipuler de code
+
+On utilise le package Shiny. Ce package permet :
+
+-   de séparer la partie interface de la partie traitement
+
+-   de créer des interfaces web très variées et personnalisables
+
+-   de déployer des applications web
+
+Une application Shiny doit être mise sous Gitlab et comporter 3 environnements (branches) :
+
+-   Développement,
+
+-   Recette,
+
+-   Production

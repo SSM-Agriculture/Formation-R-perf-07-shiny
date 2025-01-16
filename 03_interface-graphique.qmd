@@ -1,0 +1,135 @@
+# Partie interface graphique {.backgroundTitre}
+
+## Partie interface graphique {.backgroundTitre}
+
+-   On créer un objet **ui**, auquel on affecte une « page »
+
+`ui <- fluidPage(….)`
+
+Il existe plusieurs manières de créer une page, suivant comment on veut la présenter : *fluidPage, fixedPage, bootstrapPage, pageWithSidebar, …*
+
+-   On prend ici l'exemple d'une `fluidPage`.
+
+-   En paramètre de la page, on indique les éléments qu'elle va contenir.
+
+## Partie interface graphique {.backgroundTitre}
+
+Une page peut être découpée en « lignes » :
+
+`ui <- fluidPage(`
+
+`fluidRow(),`
+
+`fluidRow()`
+
+`)`
+
+## Partie interface graphique {.backgroundTitre}
+
+Chaque ligne peut être découpée en « colonnes » :
+
+`ui <-fluidPage(`
+
+`fluidRow(`
+
+`column(),`
+
+`column()`
+
+`)`
+
+`)`
+
+## Partie interface graphique {.backgroundTitre}
+
+-   L'interface utilisateur (**ui.R**) est la vitrine de l'application. C'est une fenêtre dans laquelle l'utilisateur va « saisir » des informations : les inputs. Les valeurs des inputs sont définies par manipulation de *widgets*.
+
+-   Les résultats (*outputs*) produits par l'application sont généralement affichés dans cette interface.
+
+-   L'interface est une page Web « composée » par shiny.
+
+-   Elle peut prendre plusieurs formes : la mise en page (*layout*). L'une des plus classiques est la *sidebarLayout*.
+
+## Partie interface graphique {.backgroundTitre}
+
+Pour permettre à l'utilisateur de saisir des données en entrée, on utilise des widgets. Les plus courants sont :
+
+-   **selectInput** : liste déroulante
+
+-   **radioButtons** : boutons radio
+
+-   **checkboxInput** : case à cocher
+
+-   **sliderInput** : bouton à déplacer sur une barre
+
+-   **numericInput** : zone de saisie pour une variable numérique
+
+-   **textInput** : zone de saisie pour une variable texte
+
+-   **actionButton** : bouton pour effectuer une action
+
+-   **fileInput** : bouton pour sélectionner un fichier
+
+## Partie interface graphique {.backgroundTitre}
+
+Voir <http://shiny.rstudio.com/gallery/widget-gallery.html>
+
+![](img/clipboard-interface1.png){fig-align="center"}
+
+## Partie interface graphique {.backgroundTitre}
+
+Les widgets sont en fait des fonctions qui attendent plusieurs arguments. Les 2 premiers sont :
+
+-   le nom du widget (inputId)
+
+-   le label, c'est à dire le texte qui guidera l'utilisateur dans ses choix.
+
+[Exemple :]{.underline}
+
+`selectInput(inputId="select1",`
+
+`label="Veuillez faire un choix dans la liste",`
+
+`choices = c("choix 1" = 1, "choix 2" = 2, "choix 3" = 3)`
+
+`)`
+
+## Partie interface graphique {.backgroundTitre}
+
+Chaque colonne contiendra des éléments :
+
+-   Des inputs (actionButton, selectInput, textInput, fileInput, ... )
+
+-   Des outputs (tableOutput, plotOutput, downloadButton, …)
+
+On indique en premier paramètre de la colonne la taille de celle-ci, sachant que la taille totale d'une ligne (somme des colonnes) est de **12**.
+
+## Partie interface graphique {.backgroundTitre}
+
+`ui <-fluidPage(`
+
+`fluidRow(`
+
+`column(8,`
+
+`selectInput()`
+
+`),`
+
+`column(4,`
+
+`tableOutput()`
+
+`)`
+
+`)`
+
+`)`
+
+## Partie interface graphique {.backgroundTitre}
+
+Les différents objets finaux (*input ou output*) ont tous des paramètres différents, mais le premier est toujours le même, **inputId** pour les inputs, et **outputId** pour les output.
+
+→ C'est cet identifiant qui permettra de faire le lien entre l'interface graphique et la partie serveur : la partie traitement (le serveur) peut ainsi récupérer les valeurs saisies dans les inputs et d'afficher les résultats dans les outputs.
+
+[Attention :]{.underline} Comme on va rapidement imbriquer beaucoup de couches d'éléments, il est très important de bien aérer et indenter son code.

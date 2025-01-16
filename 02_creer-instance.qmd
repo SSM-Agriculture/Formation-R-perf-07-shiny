@@ -1,0 +1,15 @@
+# Créer une interface {.backgroundTitre}
+
+## Créer une interface {.backgroundTitre}
+
+La création d'une application Shiny se fait en 2 étapes.
+
+1.  Interface graphique : créer et agencer les différents éléments (boutons, champs de saisie, affichage de graphiques ou tableaux, …)
+
+2.  Serveur : récupérer les paramètres saisies dans l'interface, écrire les traitements R, et afficher les résultats
+
+## Créer une interface {.backgroundTitre}
+
+-   Les utilisateurs manipulent l'interface, le serveur actualise l'affichage des résultats sur l'interface via du code R.
+
+![](img/clipboard-creer1.png){fig-align="center"}
