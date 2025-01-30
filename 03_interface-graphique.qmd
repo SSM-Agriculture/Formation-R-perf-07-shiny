@@ -14,35 +14,46 @@ Il existe plusieurs manières de créer une page, suivant comment on veut la pr�
 
 ## Partie interface graphique
 
+<br>
+
 Une page peut être découpée en « lignes » :
+  
+  
+```{.r}
+ui <- fluidPage(
 
-`ui <- fluidPage(`
+fluidRow(),
 
-`              fluidRow(),`
+fluidRow()
 
-`              fluidRow()`
-
-`              )`
+)
+```
 
 ## Partie interface graphique
+
+<br>
 
 Chaque ligne peut être découpée en « colonnes » :
+  
+  
+```{.r}
+ui <-fluidPage(
 
-`ui <-fluidPage(`
+  fluidRow(
 
-`fluidRow(`
+    column(),
 
-`column(),`
+    column() 
+  )
 
-`column()`
-
-`)`
-
-`)`
+)
+```
 
 ## Partie interface graphique
 
--   L'interface utilisateur (**ui.R**) est la vitrine de l'application. C'est une fenêtre dans laquelle l'utilisateur va « saisir » des informations : les inputs. Les valeurs des inputs sont définies par manipulation de *widgets*.
+<br>
+
+-   L'interface utilisateur (**ui.R**) est la vitrine de l'application. C'est une fenêtre dans laquelle l'utilisateur va « saisir » des informations : **les inputs**. Les valeurs des inputs sont définies par manipulation de **widgets**.
 
 -   Les résultats (*outputs*) produits par l'application sont généralement affichés dans cette interface.
 
@@ -52,7 +63,7 @@ Chaque ligne peut être découpée en « colonnes » :
 
 ## Partie interface graphique
 
-Pour permettre à l'utilisateur de saisir des données en entrée, on utilise des widgets. Les plus courants sont :
+Pour permettre à l'utilisateur de saisir des données en entrée, on utilise des **widgets.** Les plus courants sont :
 
 -   **selectInput** : liste déroulante
 
@@ -86,15 +97,20 @@ Les widgets sont en fait des fonctions qui attendent plusieurs arguments. Les 2 
 
 [Exemple :]{.underline}
 
-`selectInput(inputId="select1",`
+```{.r}
+selectInput(inputId="select1",
 
-`label="Veuillez faire un choix dans la liste",`
+  label="Veuillez faire un choix dans la liste",
 
-`choices = c("choix 1" = 1, "choix 2" = 2, "choix 3" = 3)`
+  choices = c("choix 1" = 1, "choix 2" = 2, "choix 3" = 3)
 
-`)`
+)
+```
+
 
 ## Partie interface graphique
+
+<br>
 
 Chaque colonne contiendra des éléments :
 
@@ -106,30 +122,38 @@ On indique en premier paramètre de la colonne la taille de celle-ci, sachant qu
 
 ## Partie interface graphique
 
-`ui <-fluidPage(`
-
-`fluidRow(`
-
-`column(8,`
-
-`selectInput()`
-
-`),`
-
-`column(4,`
-
-`tableOutput()`
-
-`)`
-
-`)`
-
-`)`
+```{.r}
+ui <-fluidPage(
+  
+  fluidRow(
+    
+    column(8,
+           
+           selectInput()
+           
+    ),
+    
+    column(4,
+           
+           tableOutput()
+           
+    )
+    
+  )
+  
+)
+```
 
 ## Partie interface graphique
+
+<br>
 
 Les différents objets finaux (*input ou output*) ont tous des paramètres différents, mais le premier est toujours le même, **inputId** pour les inputs, et **outputId** pour les output.
 
 → C'est cet identifiant qui permettra de faire le lien entre l'interface graphique et la partie serveur : la partie traitement (le serveur) peut ainsi récupérer les valeurs saisies dans les inputs et d'afficher les résultats dans les outputs.
 
-[Attention :]{.underline} Comme on va rapidement imbriquer beaucoup de couches d'éléments, il est très important de bien aérer et indenter son code.
+::: callout-warning
+## Attention
+
+Comme on va rapidement imbriquer beaucoup de couches d'éléments, il est très important de bien aérer et indenter son code.
+:::
