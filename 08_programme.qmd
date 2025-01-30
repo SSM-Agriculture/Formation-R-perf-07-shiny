@@ -4,20 +4,25 @@
 
 -   Pour ensuite lancer l'application définie, on utilise la fonction ShinyApp, en appelant les parties ui et server.
 
-`ui <- fluidPage( … )`
+```{.r}
+ui <- fluidPage( … )
 
-`server``<-``function(input, output, session) { … }`
+server``<-``function(input, output, session) { … }
 
-`ShinyApp(ui, server)`
+ShinyApp(ui, server)
+```
 
 -   On lance ensuite le programme normalement.
 
-**EXERCICE**
 
 ## Le programme complet
 
+<br>
+
 On peut rajouter du CSS, du JavaScript, ...
 
-Détails des fonctions : <https://shiny.rstudio.com/reference/shiny/latest/>
+<br>
 
-Des possibilités infinies : <https://shiny.rstudio.com/gallery/>
+- Détails des fonctions : <https://shiny.rstudio.com/reference/shiny/latest/>
+
+- Des possibilités infinies (voir cette galerie inspirante) : <https://shiny.rstudio.com/gallery/>
