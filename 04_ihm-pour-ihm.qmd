@@ -1,6 +1,6 @@
 # Interface graphique pour interface graphique {.backgroundTitre}
 
-## Interface graphique pour interface graphique {.backgroundTitre}
+## Interface graphique pour interface graphique
 
 -   Le package **{shinyuieditor}** permet de construire l’UI sans avoir à coder <https://rstudio.github.io/shinyuieditor/> (version préliminaire)
 

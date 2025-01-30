@@ -1,6 +1,6 @@
 # Créer une interface {.backgroundTitre}
 
-## Créer une interface {.backgroundTitre}
+## Créer une interface
 
 La création d'une application Shiny se fait en 2 étapes.
 
@@ -8,7 +8,7 @@ La création d'une application Shiny se fait en 2 étapes.
 
 2.  Serveur : récupérer les paramètres saisies dans l'interface, écrire les traitements R, et afficher les résultats
 
-## Créer une interface {.backgroundTitre}
+## Créer une interface
 
 -   Les utilisateurs manipulent l'interface, le serveur actualise l'affichage des résultats sur l'interface via du code R.
 

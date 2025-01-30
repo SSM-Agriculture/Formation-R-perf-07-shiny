@@ -1,6 +1,6 @@
 # Le programme complet {.backgroundTitre}
 
-## Le programme complet {.backgroundTitre}
+## Le programme complet
 
 -   Pour ensuite lancer l'application définie, on utilise la fonction ShinyApp, en appelant les parties ui et server.
 
@@ -14,7 +14,7 @@
 
 **EXERCICE**
 
-## Le programme complet {.backgroundTitre}
+## Le programme complet
 
 On peut rajouter du CSS, du JavaScript, ...
 

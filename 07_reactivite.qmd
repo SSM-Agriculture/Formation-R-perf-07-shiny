@@ -1,6 +1,6 @@
 # Réactivité {.backgroundTitre}
 
-## Réactivité {.backgroundTitre}
+## Réactivité
 
 Avec Shiny, on peut déclencher des traitements en fonction des actions de l'utilisateur.
 
@@ -12,7 +12,7 @@ On utilise des *« observers »* :
 
 -   **observeEvent** → déclenche un traitement quand l'utilisateur modifie un input précis
 
-## Réactivité {.backgroundTitre}
+## Réactivité
 
 -   Partie UI :
 
@@ -24,7 +24,7 @@ On utilise des *« observers »* :
 
 `)`
 
-## Réactivité {.backgroundTitre}
+## Réactivité
 
 -   Partie Server :
 

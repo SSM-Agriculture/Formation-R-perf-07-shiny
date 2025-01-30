@@ -1,6 +1,6 @@
 # Introduction {.backgroundTitre}
 
-## Introduction {.backgroundTitre}
+## Introduction
 
 Pourquoi créer une interface graphique ?
 

@@ -6,7 +6,7 @@ editor:
 
 # Partie serveur {.backgroundTitre}
 
-## Partie serveur {.backgroundTitre}
+## Partie serveur
 
 On crée une fonction **server**, qui a au moins 2 paramètres :
 
@@ -26,7 +26,7 @@ les traitements nécessaires à l'application :
 
 -   Traçage de graphique, affichage de tableau ;
 
-## Partie serveur {.backgroundTitre}
+## Partie serveur
 
 Il y a 2 particularités principales liée à Shiny dans le code du
 serveur :
@@ -37,7 +37,7 @@ serveur :
 -   Les éléments dits « réactifs » : on peut déclencher un traitement
     particulier sur une action de l'utilisateur
 
-## Partie serveur {.backgroundTitre}
+## Partie serveur
 
 Pour récupérer une valeur saisie par l'utilisateur, par exemple un champ
 de texte, on utilise le paramètre input, avec l'identifiant du champ de
@@ -48,7 +48,7 @@ saisie **(inputId)**
 
 -   [partie server]{.underline} : `ma_chaine <- input$champ_saisie`
 
-## Partie serveur {.backgroundTitre}
+## Partie serveur
 
 Pour placer un tableau ou un graphique dans l'interface, on affecte à
 l'output la table concernée, en lui appliquant une fonction appelée
@@ -66,7 +66,7 @@ Dans le paramètre de la fonction, dans les accolades, on peut mettre
 simplement un objet R, ou un bloc de code :
 `renderTable({ head(data, n=10 })`
 
-## Partie serveur {.backgroundTitre}
+## Partie serveur
 
 De la même façon que nous insérons des données dans l'application via
 les *widget*, il faut s'occuper d'afficher à l'écran les résultats des
@@ -80,11 +80,11 @@ On utilise pour cela les fonctions render\* :
 
 -   `renderTable, ...`
 
-## Partie serveur {.backgroundTitre}
+## Partie serveur
 
 ![](img/clipboard-serveur1.png)
 
-## Partie serveur {.backgroundTitre}
+## Partie serveur
 
 Les fonctions **render\*** coté server et *\*Output* coté ui vont de
 pair :

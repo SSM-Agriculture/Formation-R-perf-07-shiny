@@ -1,6 +1,6 @@
 # Partie interface graphique {.backgroundTitre}
 
-## Partie interface graphique {.backgroundTitre}
+## Partie interface graphique
 
 -   On créer un objet **ui**, auquel on affecte une « page »
 
@@ -12,7 +12,7 @@ Il existe plusieurs manières de créer une page, suivant comment on veut la pr�
 
 -   En paramètre de la page, on indique les éléments qu'elle va contenir.
 
-## Partie interface graphique {.backgroundTitre}
+## Partie interface graphique
 
 Une page peut être découpée en « lignes » :
 
@@ -24,7 +24,7 @@ Une page peut être découpée en « lignes » :
 
 `              )`
 
-## Partie interface graphique {.backgroundTitre}
+## Partie interface graphique
 
 Chaque ligne peut être découpée en « colonnes » :
 
@@ -40,7 +40,7 @@ Chaque ligne peut être découpée en « colonnes » :
 
 `)`
 
-## Partie interface graphique {.backgroundTitre}
+## Partie interface graphique
 
 -   L'interface utilisateur (**ui.R**) est la vitrine de l'application. C'est une fenêtre dans laquelle l'utilisateur va « saisir » des informations : les inputs. Les valeurs des inputs sont définies par manipulation de *widgets*.
 
@@ -50,7 +50,7 @@ Chaque ligne peut être découpée en « colonnes » :
 
 -   Elle peut prendre plusieurs formes : la mise en page (*layout*). L'une des plus classiques est la *sidebarLayout*.
 
-## Partie interface graphique {.backgroundTitre}
+## Partie interface graphique
 
 Pour permettre à l'utilisateur de saisir des données en entrée, on utilise des widgets. Les plus courants sont :
 
@@ -70,13 +70,13 @@ Pour permettre à l'utilisateur de saisir des données en entrée, on utilise de
 
 -   **fileInput** : bouton pour sélectionner un fichier
 
-## Partie interface graphique {.backgroundTitre}
+## Partie interface graphique
 
 Voir <http://shiny.rstudio.com/gallery/widget-gallery.html>
 
 ![](img/clipboard-interface1.png){fig-align="center"}
 
-## Partie interface graphique {.backgroundTitre}
+## Partie interface graphique
 
 Les widgets sont en fait des fonctions qui attendent plusieurs arguments. Les 2 premiers sont :
 
@@ -94,7 +94,7 @@ Les widgets sont en fait des fonctions qui attendent plusieurs arguments. Les 2 
 
 `)`
 
-## Partie interface graphique {.backgroundTitre}
+## Partie interface graphique
 
 Chaque colonne contiendra des éléments :
 
@@ -104,7 +104,7 @@ Chaque colonne contiendra des éléments :
 
 On indique en premier paramètre de la colonne la taille de celle-ci, sachant que la taille totale d'une ligne (somme des colonnes) est de **12**.
 
-## Partie interface graphique {.backgroundTitre}
+## Partie interface graphique
 
 `ui <-fluidPage(`
 
@@ -126,7 +126,7 @@ On indique en premier paramètre de la colonne la taille de celle-ci, sachant qu
 
 `)`
 
-## Partie interface graphique {.backgroundTitre}
+## Partie interface graphique
 
 Les différents objets finaux (*input ou output*) ont tous des paramètres différents, mais le premier est toujours le même, **inputId** pour les inputs, et **outputId** pour les output.
 
