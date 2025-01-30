@@ -1,16 +1,12 @@
----
-editor: 
-  markdown: 
-    wrap: 72
----
-
 # Partie serveur {.backgroundTitre}
 
 ## Partie serveur
 
-On crée une fonction **server**, qui a au moins 2 paramètres :
+On crée une fonction `server``, qui a au moins 2 paramètres :
 
 `server <- function(input, output) { ... }`
+
+<br>
 
 Dans le corps de la fonction, on peut placer du code R traditionnel.
 
@@ -22,11 +18,13 @@ les traitements nécessaires à l'application :
 
 -   Chargement de données ;
 
--   Calculs ; Sélection, extraction, … ;
+-   Calculs ; sélection, extraction, … ;
 
 -   Traçage de graphique, affichage de tableau ;
 
 ## Partie serveur
+
+<br>
 
 Il y a 2 particularités principales liée à Shiny dans le code du
 serveur :
@@ -39,31 +37,42 @@ serveur :
 
 ## Partie serveur
 
+<br>
+
 Pour récupérer une valeur saisie par l'utilisateur, par exemple un champ
 de texte, on utilise le paramètre input, avec l'identifiant du champ de
 saisie **(inputId)**
 
--   [partie ui]{.underline} :
+-   [partie ui]{.underline} :  
+
     `textInput(inputId="champ_saisie", label= "Saisir :")`
 
--   [partie server]{.underline} : `ma_chaine <- input$champ_saisie`
+-   [partie server]{.underline} :  
+
+     `ma_chaine <- input$champ_saisie`
 
 ## Partie serveur
+
+<br>
 
 Pour placer un tableau ou un graphique dans l'interface, on affecte à
 l'output la table concernée, en lui appliquant une fonction appelée
 « render »
 
--   [partie ui]{.underline} : `tableOutput(outputId="resultat")`
+-   [partie ui]{.underline} :  
 
--   [partie server]{.underline} :
+    `tableOutput(outputId="resultat")`
+
+-   [partie server]{.underline} :  
+
     `output$resultat <- renderTable({ data })`
 
 Il existe des fonction **render** pour chaque type d'output
 (`renderTable, renderPlot, renderText, renderImage, …`).
 
 Dans le paramètre de la fonction, dans les accolades, on peut mettre
-simplement un objet R, ou un bloc de code :
+simplement un objet R, ou un bloc de code :  
+
 `renderTable({ head(data, n=10 })`
 
 ## Partie serveur
@@ -82,7 +91,7 @@ On utilise pour cela les fonctions render\* :
 
 ## Partie serveur
 
-![](img/clipboard-serveur1.png)
+![](img/clipboard-serveur1.png){fig-align="center"}
 
 ## Partie serveur
 
