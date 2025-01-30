@@ -2,6 +2,8 @@
 
 ## Liens utiles
 
+<br>
+
 -   L'aide mémoire:
 
 <https://thinkr.fr/pdf/shiny-french-cheatsheet.pdf>
