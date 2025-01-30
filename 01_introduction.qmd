@@ -6,7 +6,7 @@ Pourquoi créer une interface graphique ?
 
 ⇒ Cela permet de pouvoir lancer un programme, modifier des paramètres, visualiser des résultats, sans avoir à manipuler de code
 
-On utilise le package Shiny. Ce package permet :
+On utilise le package `Shiny.` Ce package permet :
 
 -   de séparer la partie interface de la partie traitement
 
@@ -14,7 +14,7 @@ On utilise le package Shiny. Ce package permet :
 
 -   de déployer des applications web
 
-Une application Shiny doit être mise sous Gitlab et comporter 3 environnements (branches) :
+Une application Shiny a vocation à être mise sous Gitlab et comporter 3 environnements (branches) :
 
 -   Développement,
 
