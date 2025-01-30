@@ -13,15 +13,22 @@
 ::: {.callout-tip icon=false}
 ## Exercice - partie Interface (ui)
 
-Le but de cet exercice est de créer une interface pour afficher des statistiques simples sur des données. 
-Partie 1 – Interface
-1) Ouvrez la table BC.rds. 
-Récupérer dans un vecteur la liste des régions.
-2) On va maintenant initialiser une page vide. Il nous faut 3 objets :
-	- un objet ui, en affectant une fluidPage() vide
-	- la fonction server(vide aussi)
-	- la commande shinyApp(ui, server)
-Exécutez le programme.
+Le but de cet exercice est de créer une interface pour afficher des statistiques simples sur des données.   
+
+**Partie 1 – Interface**  
+
+1) Ouvrez la table BC.rds.   
+
+Récupérer dans un vecteur la liste des régions.  
+  
+2) On va maintenant initialiser une page vide. Il nous faut 3 objets :  
+
+	- un objet ui, en affectant une fluidPage() vide  
+	- la fonction server(vide aussi)  
+	- la commande shinyApp(ui, server)  
+	  
+Exécutez le programme.  
+
 (suite sur la prochaine slide...)
 :::
 
@@ -30,10 +37,14 @@ Exécutez le programme.
 ::: {.callout-tip icon=false}
 ## Exercice - partie Interface (ui)
 
-3) Créez une liste déroulante à l'aide de selectInput. Renseignez les paramètres inputId (identifiant), label (texte affiché), et choices (avec la liste des régions créée précédemment).
-Créez un tableOutput.
-Exécutez le programme.
-4) De la même manière, créez sous la liste déroulante une autre liste, contenant les items « Population », « Altitude », et « Superficie ». Puis encore en-dessous un bouton avec la fonction actionButton.
+3) Créez une liste déroulante à l'aide de selectInput. Renseignez les paramètres inputId (identifiant), label (texte affiché), et choices (avec la liste des régions créée précédemment).  
+  
+Créez un tableOutput.  
+
+Exécutez le programme.  
+
+4) De la même manière, créez sous la liste déroulante une autre liste, contenant les items « Population », « Altitude », et « Superficie ». Puis encore en-dessous un bouton avec la fonction actionButton.  
+  
 Exécutez le programme.
 :::
 
