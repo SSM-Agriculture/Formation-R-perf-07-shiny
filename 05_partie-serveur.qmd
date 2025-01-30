@@ -2,7 +2,7 @@
 
 ## Partie serveur
 
-On crée une fonction `server``, qui a au moins 2 paramètres :
+On crée une fonction `server`, qui a au moins 2 paramètres :
 
 `server <- function(input, output) { ... }`
 
