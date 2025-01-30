@@ -38,7 +38,7 @@ initialisation**.\
 
 ## Avant-propos
 
-Elles sont données en présentiel sur une durée **de trois journée**, les
+Elles sont données en présentiel sur une durée **de trois jours**, les
 modules de cette formation sont ajustables suivants le choix des agents.
 
 ::: callout-note
