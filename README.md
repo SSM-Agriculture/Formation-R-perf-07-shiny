@@ -1,3 +1,7 @@
+<!-- badges: start -->
+[![render](https://github.com/SSM-Agriculture/formation-R-perf-07-shiny/actions/workflows/publish.yaml/badge.svg)](https://github.com/SSM-Agriculture/formation-R-perf-07-shiny/actions)
+<!-- badges: end -->
+
 # Formation R perfectionnement - Module 7 sur les applications Shiny
 
 Support de présentation pour la formation dispensée au [MASA](https://agriculture.gouv.fr/).
