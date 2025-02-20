@@ -55,7 +55,7 @@ jobs:
 
       - name: Move pdf
         shell: bash
-        run: mv _site/Diaporama_modules_fonctions.pdf diaporama_pdf/Diaporama_modules_shiny.pdf
+        run: mv _site/Diaporama_modules_shiny.pdf diaporama_pdf/Diaporama_modules_shiny.pdf
   
       - name: Commit and push PDF
         shell: bash
