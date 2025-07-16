@@ -6,3 +6,5 @@
 /.quarto/
 /images/
 *.html
+
+/.luarc.json
